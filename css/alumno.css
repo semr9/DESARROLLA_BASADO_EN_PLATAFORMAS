@@ -1,0 +1,14 @@
+body {
+	font-family: cursive;
+	background-color:#808000;
+	font-size: 15pt;
+	color: white;
+}
+
+.bloque {
+  background-color: #2F4F4F;
+  border-radius: 10px;
+  box-shadow: 15px 10px #82b74b;	
+  margin: 30px 50px;
+  padding: 10px;
+}

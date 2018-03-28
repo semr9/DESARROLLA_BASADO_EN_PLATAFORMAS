@@ -1,58 +1,92 @@
-<!DOCTYPE HTML>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
 
 <html>
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="estilo.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <link rel="stylesheet" href="css/diseño1.css" type="text/css" >
+    <link rel="stylesheet" href="css/alumno.css" type="text/css" >
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+    <script type="text/javascript" src="js/comportamiento1.js" ></script>
 	<title>Alumno de la Univerisdad Catolica San Pablo</title>
 </head>
 <body>
-	<table id="t01">
-	  <tr>
-		<th>Nombres</th>
-		<th>Apellido</th> 
-		<th>Edad</th>
-		<th>Semestre</th>
-		<th>Matriculado</th>
-	  </tr>
-	  <tr>
-		<td>Mario</td>
-		<td>Castañeda</td>
-		<td>19</td>
-	  	<td>4</td>
-	  	<td>Si</td>
-	  </tr>
-	</table>
-	<br>
-	<div class="s2">
-	<img src="/home/sebastian/Pictures/html/usuario.png" alt="Foto de estudiante" style="padding:30px ;width:300px;height:400px;float:right">
+	<div id="cabecera" class="bloque">
+      <h1 > Mario Castañeda </h1>
+		<img src="img/estudiante_einstein.jpg" title="albert" alt="" >
+    </div>
+    
+    <div>
+    	<h1 class="titulo">Informacion en la Universidad</h1>
+		<table >
+		  <tr>
+			<th>Nombres</th>
+			<th>Apellido</th> 
+			<th>Edad</th>
+			<th>Semestre</th>
+			<th>Matriculado</th>
+		  </tr>
+		  <tr>
+			<td>Mario</td>
+			<td>Castañeda</td>
+			<td>19</td>
+		  	<td>4</td>
+		  	<td>Si</td>
+		  </tr>
+		</table>
 	</div>
-	<br>
-		<p style="background-color: #CD853F">TALLERES QUE ESTUVO:</p>
-		<div class="s1">
-		<ul>
-		<li>teatro</li>
-		<li>futbol</li>
-		<li>astrologia</li>
-		</ul>
+	
+	
+		<div class="bloque">
+			<h1 class="titulo"> TALLERES QUE ESTUVO:</h1>
+			<ul>
+				<li>teatro</li>
+				<li>futbol</li>
+				<li>astrologia</li>
+			</ul>
+			<img class="cambio_imagen" id="talleres" src="img/teatro.png" title="talleres" alt="" >
+			<button type="button" onclick="imagen_anterior()">anterior</button>
+      		<button type="button" onclick="imagen_despues()">despues</button>
 		</div>
-	<br>	
-	<p style="background-color: #CD853F ">GUSTOS POR LA MUSICA:</p>
-		<div class="s1">
-		<ul>
-		<li>rock</li>
-		<li>jazz</li>
-		<li>pop</li>
-		</ul>
+		
+		<div class="bloque">
+		<h1 class="titulo"> Gustos por la musica:</h1>
+			<ul>
+				<li>rock</li>
+				<li>jazz</li>
+				<li>pop</li>
+			</ul>
+			<img class="cambio_imagen" id="musica" src="img/rock.jpg" title="rock" alt="" >
+			<button type="button" onclick="imagen_anterior1()">anterior</button>
+      		<button type="button" onclick="imagen_despues1()">despues</button>
 		</div>
-	<br>	
-	<p style="background-color: #CD853F">VIAJES QUE REALIZO:</p>
-		<div class="s1">
-		<ul>
-		<li>Bolivia</li>
-		<li>Alemania</li>
-		<li>Tailandia</li>
-		</ul>
+	
+		<div class="bloque">
+		<h1 class="titulo"> Viajes que realizo:</h1>
+			<ul>
+				<li>Italia</li>
+				<li>Francia</li>
+				<li>Tailandia</li>
+			</ul>
+			<img class="cambio_imagen" id="viajes" src="img/italia.jpg" title="italia" alt="" >
+			<button type="button" onclick="imagen_anterior2()">anterior</button>
+      		<button type="button" onclick="imagen_despues2()">despues</button>
+      	
 		</div>
+		<div class="bloque">
+		    <h1 class="titulo">Interacción con Mario Castañeda</h1>
+		    <fieldset>
+		      <legend>Desea contactar a Mario?</legend>
+		      <button name="invitacion">Mandarle una invitación de amistad</button>          
+		    </fieldset>
+		    
+		    <fieldset>
+		      <legend>Solo enviarle palabras por ayuda en trabajos?</legend>
+		      <textarea cols="50" rows="10" name="palabras"></textarea>
+		      <button name="enviarPalabras">Enviar</button>
+        </fieldset>
+        
+      </div>
 </body>
 </html>
+
